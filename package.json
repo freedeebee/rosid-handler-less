@@ -1,0 +1,48 @@
+{
+  "name": "rosid-handler-less",
+  "version": "1.0.0",
+  "authors": [
+    "Dennis Schad <dennis.schad1991@gmail.com>"
+  ],
+  "description": "Load LESS and transform to CSS, add vendor prefixes and minify",
+  "main": "src/index.js",
+  "keywords": [
+    "rosid",
+    "handler",
+    "transform",
+    "compile",
+    "less",
+    "postcss",
+    "autoprefixer",
+    "cssnano"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/freedeebee/rosid-handler-less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freedeebee/rosid-handler-less.git"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc node_modules/mocha/bin/_mocha"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.4.8",
+    "cssnano": "^4.1.10",
+    "less": "^3.10.2",
+    "postcss": "^7.0.14"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "fsify": "^3.0.0",
+    "mocha": "^6.0.0",
+    "nyc": "^14.0.0"
+  },
+  "mocha": {
+    "timeout": "100000"
+  }
+}
